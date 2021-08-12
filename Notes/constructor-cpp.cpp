@@ -4,14 +4,15 @@ using namespace std;
 
 /*
 What is constructor?
-    Constructor exists inside a class.
-    It is a special member function.
-    It is used to initialize the objects.
-    It has same name as that of a class,
-    reason behind:
-    since it is used to initialize the objects
-    thus, the compiler should know before hand 
-    which method to call when an object is created.
+    - Constructor exists inside a class.
+    - It is a special member function.
+    - It is used to initialize the objects.
+    - It has same name as that of a class,
+    - reason behind:
+      since it is used to initialize the objects
+      thus, the compiler should know before hand 
+      which method to call when an object is created.
+    - syntax --> ClassName(){}
 */
 
 /*
