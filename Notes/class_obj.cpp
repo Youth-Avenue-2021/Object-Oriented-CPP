@@ -24,7 +24,7 @@ public:
 
     // public methods inside the class
     void getData(int distance, int fuel) {
-        cout << "Your car travelled " << distance << "km ran and " << fuel << "L fuel is consumed." << endl;  
+        cout << "Your car travelled " << distance << "km and " << fuel << "L fuel is consumed." << endl;  
     }
 
     void carspeed() {
@@ -57,7 +57,7 @@ int main() {
     
     swift.topSpeed = 200;    // setting properties of car
 
-    // function call
+    // function call (access class methods using swift object)
     swift.carspeed();
     swift.getData(10000, 200);
     swift.mileage(10000, 235);
