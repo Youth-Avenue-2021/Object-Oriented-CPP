@@ -1,19 +1,26 @@
+// Inheritance
+
 #include <iostream>
 using namespace std;
 
-// inheritance
-
-// There are total 5 types of inheritance...
 /*
-1. single inheritance
-2. multiple inheritance
-3. multilevel inheritance
-4. Hierarchical inheritance
-5. Hybrid inheritance
+What is Inheritance?
+    - Inheritance is wrapping up pf data & functions into a single unit.
+    - In simple words, enclosing the required data or functions into a single box
+*/
+
+
+/*
+Types of Inheritance:
+    1. single inheritance
+    2. multiple inheritance
+    3. multi-level inheritance
+    4. Hierarchical inheritance
+    5. Hybrid inheritance
 */
 
 /*
-// single inheritance
+// SINGLE INHERITANCE - one base class, one derived class
 
 class vehicle {
 public:
@@ -38,12 +45,9 @@ int main() {
 
 
 
-// Multilevel inheritance
-// here is the basic example of multilevel inheritance...
-// here, vehicle class is a parent (base) class and car is the parent class of vehicle and audi is the parent class of car
-// so, audi class uses all methods of vehicle because audi class uses car class methods and car class uses vehicle class methods...
-
 /*
+//  MULTI-LEVEL INHERITANCE - base class --> first derived class(acts as a base class for next class) --> second derived class
+
 class vehicle {
 public:
     string otherVehicle = "bike";
@@ -75,8 +79,10 @@ int main() {
 
 
 
-// Multiple inheritance
+
 /*
+// MULTIPLE INHERITANCE - more than one base class, one derived class
+
 class A {
 public:
     string otherVehicle = "bike";
@@ -109,7 +115,8 @@ int main() {
 
 
 
-// Hierarchical inheritance
+
+// HIERARCHIAL INHERITANCE
 
 class vehicle {
 public:
@@ -142,7 +149,10 @@ int main() {
 }
 
 
+/*
+// HYBRID INHERITANCE
+    - It combines two or more forms of inheritance
+    - Example: When a sub class inherits from multiple base classes & 
+      all of its base classes inherit from a single base class
+*/
 
-// hybrid inheritance
-
-// plz set an example for hybrid inheritance
