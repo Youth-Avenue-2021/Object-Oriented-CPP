@@ -1,15 +1,40 @@
 #include<iostream>
 using namespace std;
 
-// what is constructor?
-// constructor exists inside a class and some rules of constructor...
 
 /*
-1. constructor is a basically the name of it's class
-2. constructor didn't have any return types
-3. constructor is by default public (can't define private)
-4. it's call automatically without called when object created
-5. you can't use constructor as inheritance
+What is constructor?
+    Constructor exists inside a class.
+    It is a special member function.
+    It is used to initialize the objects.
+    It has same name as that of a class,
+    reason behind:
+    since it is used to initialize the objects
+    thus, the compiler should know before hand 
+    which method to call when an object is created.
+*/
+
+/*
+Properties of constructor:
+    1. It has the same name as that of class
+    2. It don't have any return type
+    3. It is declared in public (by default) (can't define private)
+    4. It is called automatically even if it is not called
+    5. Constructor cannot be used in inheritance
+*/
+
+/*
+Types of constructor:
+    1. Default constructor 
+        - it do not have any argument
+        - called automatically if no constructor is defined but object is created
+
+    2. Parameterized constructor
+        - it has n number of arguments
+        - it needs to be defined 
+
+    3. Copy constructor
+        - it initializes an object using another object of the same class
 */
 
 class constructorDemo {
@@ -23,9 +48,11 @@ public:
 };
 
 int main() {
-    // when we define an object for class, constructor called automatic.
-    // by default constructor called first (not depending on function calling indexing)
+    // when we define an object for class, constructor is called automatically.
+    
     constructorDemo obj;
+
     obj.getData();
+
     return 0;
 }
