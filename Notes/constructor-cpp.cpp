@@ -13,6 +13,7 @@ What is constructor?
       thus, the compiler should know before hand 
       which method to call when an object is created.
     - syntax --> ClassName(){}
+    - Note, here no semicolon is used
 */
 
 /*
