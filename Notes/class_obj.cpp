@@ -1,49 +1,73 @@
 #include <iostream>
 using namespace std;
 
-// basically class is the blue print.
+/*
+Class is a blue-print.
+It is a template for objects.
+*/
+
+/* in class, variables are called data members
+   & functions are called member functions or methods
+*/
+
 // declaring car class
 class car {
-    // private variables or methods
+// private specifier
 private:
-    // private variables and methods(functions)
+    // private data members or methods
     char color[10];
     int num_of_sets;
+// public specifier
 public:
-    // public variables and methods(functions)
+    // public data members 
     int topSpeed;
+
+    // public methods inside the class
     void getData(int distance, int fuel) {
-        cout << "Your car " << distance << "km ran and total " << fuel << "L fuel used." << endl;
+        cout << "Your car travelled " << distance << "km ran and " << fuel << "L fuel is consumed." << endl;  
     }
 
     void carspeed() {
         cout << "Top speed of this car is " << topSpeed << "km/h" << endl;
     }
 
-    // defining mileage counting method (but declare outside of class)
+    // prototype for mileage counting method outside the class
     void mileage(float distance, float fuel);
     // };
-// second way to create object (after closing bracket of class declaring)
-} audi;
-// declaring mileage method outside of class car
+
+} audi;   
+
+/*
+There are three ways to create objects for a particular class
+1. declaring object before closing the class with ";"
+2. declaring objects outside the class or in main function with syntax --> ClassName ObjectName;
+3. using new operator 
+*/
+
+// declaring mileage method outside the class car
 void car::mileage(float distance, float fuel) {
     float carMileage = distance / fuel;
-    cout << "The car mileage is " << carMileage << endl;
+    cout << "The car's mileage is " << carMileage << endl;
 }
 
-
+// main function
 int main() {
-    // this is the one way to create object for perticular class...
-    // creating object for class car...
-    car swift;
-    // now adding properties for swift car...
-    swift.topSpeed = 200;
+    
+    car swift;     // creating object for class car
+    
+    swift.topSpeed = 200;    // setting properties of car
+
+    // function call
     swift.carspeed();
     swift.getData(10000, 200);
     swift.mileage(10000, 235);
     // swift.mileage(10000, 235);
 
-    // now i'm using audi object that creates after class declaring but inside bracket...
     audi.topSpeed = 250;
     audi.carspeed();
+
+    // note that audi is declared within the class
+    // while swift is declared in main function
+
+    return 0;
 }
