@@ -10,7 +10,7 @@ What is constructor?
     - It has same name as that of a class,
     - reason behind:
       since it is used to initialize the objects
-      thus, the compiler should know before hand 
+      thus, the compiler should know before hand
       which method to call when an object is created.
     - syntax --> ClassName(){}
     - Note, here no semicolon is used
@@ -27,18 +27,19 @@ Properties of constructor:
 
 /*
 Types of constructor:
-    1. Default constructor 
+    1. Default constructor
         - it do not have any argument
         - called automatically if no constructor is defined but object is created
 
     2. Parameterized constructor
         - it has n number of arguments
-        - it needs to be defined 
+        - it needs to be defined
 
     3. Copy constructor
         - it initializes an object using another object of the same class
 */
 
+/*
 class constructorDemo {
 public:
     void getData() {
@@ -51,10 +52,35 @@ public:
 
 int main() {
     // when we define an object for class, constructor is called automatically.
-    
+
     constructorDemo obj;
 
     obj.getData();
 
+    return 0;
+}
+*/
+
+
+class person {
+private:
+    int age;
+    float height;
+    string name;
+public:
+    person(int age,float height, string name) {
+        age=age;
+        height=height;
+        name=name;
+    }
+    person(person& obj) {
+    }
+};
+
+int main() {
+    cout << endl;
+    person obj(25);
+    copy_constructor myObj;
+    cout << endl;
     return 0;
 }
