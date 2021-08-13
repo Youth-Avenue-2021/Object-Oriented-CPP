@@ -62,25 +62,57 @@ int main() {
 */
 
 
-class person {
+class Person {
 private:
     int age;
     float height;
     string name;
 public:
-    person(int age,float height, string name) {
-        age=age;
-        height=height;
-        name=name;
+    // DEFAULT CONSTRUCTOR
+    Person()
+    {
+       
+        age = 18;
+        height = 162;
+        name = "ABC";
     }
-    person(person& obj) {
+
+    // PARAMETRIZED CONSTRUCTOR
+    Person(int age_new,int height_new, string name_new) {
+    
+        
+        age=age_new;
+        height=height_new;
+        name=name_new;
+    }
+
+    // COPY CONSTRUCTOR
+    Person(Person &myObj) {
+        cout << "Copy constructor" << endl;
+        age = myObj.age;
+        height = myObj.height;
+        name = myObj.name;
+    }
+
+    void display (void)
+    {
+        cout << "Age = " << age << endl
+            << "Height = " << height << endl
+            << "Name = " << name << endl;
     }
 };
 
 int main() {
     cout << endl;
-    person obj(25);
-    copy_constructor myObj;
+    // Person first,obj(25, 34.56, "xyz");
+    Person first,obj(25, 180, "XYZ");
+    first.display();
+    obj.display();
+    Person myObj;
+    myObj.display();
     cout << endl;
+
+    Person copy = myObj;
+    copy.display();
     return 0;
 }
