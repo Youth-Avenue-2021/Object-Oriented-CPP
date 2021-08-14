@@ -49,5 +49,5 @@ youthavenue3@gmail.com . We appreciate every opinion or suggestion.
 
 If you feel to contribute in this repository, guess what? We're open to contribution. Either clone this repository with following url or directly with the command: ()
 
-## **HAPPY CODING :)**
+
 
