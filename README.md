@@ -12,9 +12,9 @@ ALL TOPICS NAME THAT'S WE COVERED HERE.
 
 - Class&object
 - Constructor
-- Deconstructor
+- Destructor
 - Friend class & Friend function
-- Inheritence
+- Inheritance
 - Polymorphism
 
 ## OOP MindMaps
