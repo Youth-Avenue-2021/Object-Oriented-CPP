@@ -2,12 +2,24 @@
 using namespace std;
 
 /*
-What is destructor?
-    - It is opposite if constructor
-    - It destroys the objects created by constructor
-    - It is called automatically at the end of the program
-    - synatx ---> ~ConstructorName(){}
-    - where "~" is called tidle
+
+      What is destructor ?
+ 
+  --> It is opposite if constructor
+  --> It destroys the objects created by constructor
+  --> Synatx ---> ~ConstructorName(){}
+  --> Where "~" is called tidle
+
+========================================================================================
+    
+      When is destructor called ?
+    
+  --> A destructor function is called automatically when the object goes out of scope.
+  --> When the function ends.
+  --> When the program ends.
+  --> When a block containing local variables ends. 
+  --> When a delete operator is called.
+  
 */
 
 class destructorDemo {
