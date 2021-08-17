@@ -9,6 +9,20 @@ What is Inheritance?
     - In simple words, enclosing the required data or functions into a single box
 */
 
+/*
+     ___________________________________________________________________________________________
+    |  Access  Modifier     | Public derivation  | Private Derivation |  Protected Derivation   |
+    |_______________________|____________________|____________________|_________________________|
+    |                                                                                           |
+    | 1. Private members       Not Inherited        Not Inherited        Not Inherited          |
+    | 2. Protected members      Protected              Private             Protected            |  
+    | 3. Public members          Public                Private             Protected            |
+    |___________________________________________________________________________________________|
+    
+    *Remember : Private Member are never inheritance
+   
+*/
+
 
 /*
 Types of Inheritance:
