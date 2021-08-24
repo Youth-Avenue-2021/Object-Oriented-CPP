@@ -15,12 +15,12 @@ What is Inheritance?
     |_______________________|____________________|____________________|_________________________|
     |                                                                                           |
     | 1. Private members       Not Inherited        Not Inherited        Not Inherited          |
-    | 2. Protected members      Protected              Private             Protected            |  
+    | 2. Protected members      Protected              Private             Protected            |
     | 3. Public members          Public                Private             Protected            |
     |___________________________________________________________________________________________|
-    
+
     *Remember : Private Member are never inheritance
-   
+
 */
 
 
@@ -166,67 +166,57 @@ int main() {
 /*
 // HYBRID INHERITANCE
     - It combines two or more forms of inheritance
-    - Example: When a sub class inherits from multiple base classes & 
+    - Example: When a sub class inherits from multiple base classes &
       all of its base classes inherit from a single base class
 */
 
 //  HYBRID INHERITANCE
-class Student
-{
-    protected:
-        int roll_number;
-    public:
-        void get_number(int a)
-        {
-            roll_number = a;
-        }
-        void put_number(void)
-        {
-            cout << "Roll number = " << roll_number << endl;
-        }
+class Student {
+protected:
+    int roll_number;
+public:
+    void get_number(int a) {
+        roll_number = a;
+    }
+    void put_number(void) {
+        cout << "Roll number = " << roll_number << endl;
+    }
 };
 
-class Test : public Student{
-    protected:
-        float part1, part2;
-    public:
-        void get_marks(float x, float y)
-        {
-            part1 = x;
-            part2 = y;
-        }
-        void put_marks(void)
-        {
-            cout << "displaying marks" << endl
-                << "Part 1 = " << part1 << endl
-                << "Part 2 = " << part2 << endl;
-        }
+class Test : public Student {
+protected:
+    float part1, part2;
+public:
+    void get_marks(float x, float y) {
+        part1 = x;
+        part2 = y;
+    }
+    void put_marks(void) {
+        cout << "displaying marks" << endl
+            << "Part 1 = " << part1 << endl
+            << "Part 2 = " << part2 << endl;
+    }
 };
 
-class Sports
-{
-    protected:
-        float score;
-    public:
-        void get_score(float s)
-        {
-            score = s;
-        }
-        void put_score(void)
-        {
-            cout << "Sports = " << score << endl;
-        }
+class Sports {
+protected:
+    float score;
+public:
+    void get_score(float s) {
+        score = s;
+    }
+    void put_score(void) {
+        cout << "Sports = " << score << endl;
+    }
 };
 
-class Result : public Test, public Sports
-{
+class Result : public Test, public Sports {
     float total;
-    public:
-        void display(void);
+public:
+    void display(void);
 };
 
-void Result :: display(void)
-{
+void Result::display(void) {
     total = part1 + part2 + score;
 
     put_number();
@@ -236,12 +226,11 @@ void Result :: display(void)
     cout << "Total score = " << total << endl;
 }
 
-int main()
-{
+int main() {
     Result student;
 
     student.get_number(176);
-    student.get_marks(30.5,40.5);
+    student.get_marks(30.5, 40.5);
     student.get_score(6.0);
     student.display();
 
