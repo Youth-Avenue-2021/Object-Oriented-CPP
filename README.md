@@ -47,7 +47,7 @@ youthavenue3@gmail.com . We appreciate every opinion or suggestion.
 ### **CONTRIBUTION**
 ---
 
-If you feel to contribute in this repository, guess what? We're open to contribution. Either clone this repository with following url or directly with the command: ()
+If you feel to contribute in this repository, guess what? We're open to contribution. Either clone this repository with following url https://github.com/Youth-Avenue-2021/Object-Oriented-CPP or directly with the command: (gh repo clone Youth-Avenue-2021/Object-Oriented-CPP)
 
 
 
